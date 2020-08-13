@@ -1,0 +1,74 @@
+@import "../../variable.scss";
+
+footer {
+  position: relative;
+  background-color: #c7c7c7;
+  color: $txt-midgrey;
+  display: flex;
+  justify-content: space-around;
+  padding: 8px;
+  .copyright {
+    p {
+      // margin: 0;
+      // font-size: 15px;
+      // color: $txt-midgrey;
+      // line-height: 52px;
+
+      // @media (max-width:767px) {
+      //   line-height: 30px;
+      // }
+      
+    }
+  }
+  .social-icons {
+    a {
+      color: $txt-midgrey;
+
+      &:hover {
+        i {
+          color: $bgc-darkwhite;
+          transform: translateY(-5px); //rotateY(360deg);
+          perspective: 1000;
+        }
+      }
+    }
+    text-align: center;
+    i {
+      padding-top: 8px;
+      font-size: 35px;
+      transition: 0.2s linear;
+      margin-right: 15px;
+    }
+  }
+  a{
+    color: $txt-midgrey !important;
+  }
+}
+.bizumaFooter{
+  margin-top:11px;
+}
+@media (max-width: 720px) {
+  a{
+    color: $txt-midgrey !important;
+    font-size: 14px;
+  }
+  footer {
+    position: relative;
+    flex-direction: column;
+  }
+  .social-icons {
+    margin-top: 10px;
+    padding-bottom:10px;
+  }
+  .copyright {
+    text-align: center;
+  }
+  
+  footer .social-icons a:last-child i {
+    margin-right: 0 !important;
+  }
+  .bizumaFooter{
+    margin-top:0px;
+  }
+}
+
